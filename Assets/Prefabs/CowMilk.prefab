@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1068800036624236}
+  m_IsPrefabAsset: 1
+--- !u!1 &1068800036624236
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4157912500828584}
+  - component: {fileID: 114426088289457804}
+  m_Layer: 0
+  m_Name: CowMilk
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4157912500828584
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1068800036624236}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114426088289457804
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1068800036624236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3a93cd7c7e82be44783de1bf7d893bb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  protein:
+    tryptophan: 0.073
+    threonin: 0.143
+    isoleucin: 0.161
+    leucin: 0.265
+    lysin: 0.137
+    methionin: 0.073
+    cystin: 0.016
+    phenylalanin: 0.144
+    tyrosin: 0.148
+    valin: 0.188
+    arginin: 0.073
+    histidin: 0.073
+    alanin: 0.101
+    asparticAcid: 0.232
+    glutamicAcid: 0.634
+    glycin: 0.073
+    proline: 0.334
+    serine: 0.104
+  lipid:
+    saturatedFat: 2.422
+    oleicAcid: 1.03
+    monoInsaturatedAcid: 0.14
+    polyInsaturatedAcid: 0.14
+  glucid:
+    sugar: 5.26
