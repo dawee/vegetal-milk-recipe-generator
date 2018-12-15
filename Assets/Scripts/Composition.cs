@@ -28,7 +28,6 @@ public struct Protein {
 [System.Serializable]
 public struct Lipid {
   public double saturatedFat;
-  public double monoInsaturatedAcid;
   public double polyInsaturatedAcid;
 }
 
@@ -68,7 +67,6 @@ public class Composition : MonoBehaviour {
     },
     lipid = new Lipid {
       saturatedFat = 0,
-      monoInsaturatedAcid = 0,
       polyInsaturatedAcid = 0,
     },
     glucid = new Glucid {
@@ -110,7 +108,6 @@ public class Composition : MonoBehaviour {
       },
       lipid = new Lipid {
         saturatedFat = compositionA.lipid.saturatedFat + compositionB.lipid.saturatedFat,
-        monoInsaturatedAcid = compositionA.lipid.monoInsaturatedAcid + compositionB.lipid.monoInsaturatedAcid,
         polyInsaturatedAcid = compositionA.lipid.polyInsaturatedAcid + compositionB.lipid.polyInsaturatedAcid,
       },
       glucid = new Glucid {
@@ -140,7 +137,6 @@ public class Composition : MonoBehaviour {
         + Math.Pow(candidate.protein.proline - this.protein.proline, 2)
         + Math.Pow(candidate.protein.serine - this.protein.serine, 2)
         + Math.Pow(candidate.lipid.saturatedFat - this.lipid.saturatedFat, 2)
-        + Math.Pow(candidate.lipid.monoInsaturatedAcid - this.lipid.monoInsaturatedAcid, 2)
         + Math.Pow(candidate.lipid.polyInsaturatedAcid - this.lipid.polyInsaturatedAcid, 2)
         + Math.Pow(candidate.glucid.sugar - this.glucid.sugar, 2);
 
@@ -171,7 +167,6 @@ public class Composition : MonoBehaviour {
       },
       lipid = new Lipid {
         saturatedFat = lipid.saturatedFat * coef,
-        monoInsaturatedAcid = lipid.monoInsaturatedAcid * coef,
         polyInsaturatedAcid = lipid.polyInsaturatedAcid * coef,
       },
       glucid = new Glucid {
