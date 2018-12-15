@@ -140,7 +140,8 @@ public class Composition : MonoBehaviour {
         + Math.Pow(candidate.lipid.polyInsaturatedAcid - this.lipid.polyInsaturatedAcid, 2)
         + Math.Pow(candidate.glucid.sugar - this.glucid.sugar, 2);
 
-    return distance > MAX_DISTANCE ? 0 : (MAX_DISTANCE - distance) * 100 / MAX_DISTANCE;
+    // return distance > MAX_DISTANCE ? 0 : (MAX_DISTANCE - distance) * 100 / MAX_DISTANCE;
+    return distance;
   }
 
   public Composition Dose(double coef) {
