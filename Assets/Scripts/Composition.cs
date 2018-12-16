@@ -42,8 +42,6 @@ public class Composition : MonoBehaviour {
   public Lipid lipid;
   public Glucid glucid;
 
-  private static double MAX_DISTANCE = 35.46;
-
   public static Composition Null = new Composition {
     protein = new Protein {
       tryptophan = 0,
@@ -140,7 +138,6 @@ public class Composition : MonoBehaviour {
         + Math.Pow(candidate.lipid.polyInsaturatedAcid - this.lipid.polyInsaturatedAcid, 2)
         + Math.Pow(candidate.glucid.sugar - this.glucid.sugar, 2);
 
-    // return distance > MAX_DISTANCE ? 0 : (MAX_DISTANCE - distance) * 100 / MAX_DISTANCE;
     return distance;
   }
 
